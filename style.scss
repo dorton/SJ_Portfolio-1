@@ -4,177 +4,172 @@
     }
 }
 
-.jumbotron {
-    background-color: fuchsia;
+body {
+  font-size: 62.5%;
+  line-height: 1.8em;
+  background: #000;
 }
 
-/*
- * Globals
- */
-
-/* Links */
-a,
-a:focus,
-a:hover {
+body * {
   color: #fff;
 }
 
-/* Custom default button */
-.btn-default,
-.btn-default:hover,
-.btn-default:focus {
-  color: #333;
-  text-shadow: none; /* Prevent inheritance from `body` */
-  background-color: #fff;
-  border: 1px solid #fff;
+#container {
+  margin: 0 0 0 250px;
+  font-family: arial, sans-serif;
 }
-
-
-/*
- * Base structure
- */
-
-html,
-body {
-  height: 100%;
-  background-color: #333;
+body#home {
+  position: relative;
+  z-index: 0;
 }
-body {
-  color: #fff;
-  text-align: center;
-  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+body#home #page {
+  margin-bottom: 0;
 }
-
-/* Extra markup and styles for table-esque vertical and horizontal centering */
-.site-wrapper {
-  display: table;
+body#home header#header {
+  border: none;
+}
+body#home header#header nav ul li a {
+  background-image: url();
+}
+body#home footer#footer {
+  z-index: 2;
+  padding-top: 20px;
+  height: 230px;
+}
+body#home footer#footer h2.twitter {
+  margin-top: 20px;
+}
+body#home footer#footer ul.cross li, body#home footer#footer ul.cross p {
+  color: #aeaeae !important;
+}
+body#home footer#footer ul.cross li a, body#home footer#footer ul.cross p a {
+  border-bottom: 1px dotted #808080;
+}
+body#home footer#footer ul.cross li a.wrap {
+  display: block;
+  padding-left: 10px;
+  margin-left: -10px;
+  border: none;
+}
+body#home footer#footer ul.cross li:hover {
+  background-image: url();
+}
+body#home footer#footer ul.cross li a.wrap:hover * {
+  color: #fff !important;
+}
+body#home #faux-footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
   width: 100%;
-  height: 100%; /* For at least Firefox */
-  min-height: 100%;
-  -webkit-box-shadow: inset 0 0 100px rgba(0,0,0,.5);
-          box-shadow: inset 0 0 100px rgba(0,0,0,.5);
+  height: 270px;
+  background: url();
 }
-.site-wrapper-inner {
-  display: table-cell;
-  vertical-align: top;
-}
-.cover-container {
-  margin-right: auto;
-  margin-left: auto;
+body#home #supersized-loader {
+  display: none;
 }
 
-/* Padding for spacing */
-.inner {
-  padding: 30px;
+header#header {
+  height: 200px;
+  border-bottom: 1px solid #aeaeae;
 }
-
-
-/*
- * Header
- */
-.masthead-brand {
-  margin-top: 10px;
-  margin-bottom: 10px;
+header#header #identity {
+  height: inherit;
 }
-
-.masthead-nav > li {
-  display: inline-block;
+header#header nav {
+  position: relative;
 }
-.masthead-nav > li + li {
-  margin-left: 20px;
+header#header nav ul li {
+  border-top: 1px solid #aeaeae;
+  list-style-type: none;
 }
-.masthead-nav > li > a {
-  padding-right: 0;
-  padding-left: 0;
-  font-size: 16px;
-  font-weight: bold;
-  color: #fff; /* IE8 proofing */
-  color: rgba(255,255,255,.75);
-  border-bottom: 2px solid transparent;
+header#header nav ul li.active a {
+  color: #00ff00;
 }
-.masthead-nav > li > a:hover,
-.masthead-nav > li > a:focus {
-  background-color: transparent;
-  border-bottom-color: #a9a9a9;
-  border-bottom-color: rgba(255,255,255,.25);
+header#header nav ul li a {
+  display: block;
+  font-size: 1.25em;
 }
-.masthead-nav > .active > a,
-.masthead-nav > .active > a:hover,
-.masthead-nav > .active > a:focus {
+header#header nav #primary li ul {
+  display: none;
+}
+header#header nav #primary li:hover,
+header#header nav #primary li.active {
+  border-color: #00ff00;
+  color: #00ff00;
+}
+header#header nav #primary li:hover ul,
+header#header nav #primary li.active ul {
+  display: block;
+}
+header#header nav #primary li:hover ul li,
+header#header nav #primary li.active ul li {
+  border-color: #aeaeae;
+}
+header#header nav #primary li:hover ul li a,
+header#header nav #primary li.active ul li a {
   color: #fff;
-  border-bottom-color: #fff;
 }
-
-@media (min-width: 768px) {
-  .masthead-brand {
-    float: left;
-  }
-  .masthead-nav {
-    float: right;
-  }
+header#header nav #primary li:hover > a,
+header#header nav #primary li.active > a {
+  color: #00ff00;
 }
-
-
-/*
- * Cover
- */
-
-.cover {
-  padding: 0 20px;
+header#header nav #primary li:hover li:hover,
+header#header nav #primary li.active li:hover {
+  border-color: #00ff00;
 }
-.cover .btn-lg {
-  padding: 10px 20px;
-  font-weight: bold;
+header#header nav #primary li:hover li:hover a,
+header#header nav #primary li.active li:hover a {
+  color: #00ff00;
 }
-
-
-/*
- * Footer
- */
-
-.mastfoot {
-  color: #999; /* IE8 proofing */
-  color: rgba(255,255,255,.5);
+header#header nav #primary li.child-active ul {
+  display: block;
 }
-
-
-/*
- * Affix and center
- */
-
-@media (min-width: 768px) {
-  /* Pull out the header and footer */
-  .masthead {
-    position: fixed;
-    top: 0;
-  }
-  .mastfoot {
-    position: fixed;
-    bottom: 0;
-  }
-  /* Start the vertical centering */
-  .site-wrapper-inner {
-    vertical-align: middle;
-  }
-  /* Handle the widths */
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 100%; /* Must be percentage or pixels for horizontal alignment */
-  }
+header#header nav #secondary {
+  position: absolute;
+  top: 98px;
+  left: 0;
+  width: 720px;
+  background: url(../images/layout/border-white-710.png) right top no-repeat;
 }
-
-@media (min-width: 992px) {
-  .masthead,
-  .mastfoot,
-  .cover-container {
-    width: 700px;
-  }
+header#header nav #secondary li {
+  margin-top: 0;
 }
-
-.site-wrapper {
-    background-image: url(http://www.adweek.com/files/2016_Sep/adobe-apparel-2.jpg);
-    background-size: cover;
-    background-position: center center;
-    
+header#header nav #secondary li.intro {
+  padding-top: 19px;
+  font-size: 1.8em;
+  line-height: 1.1em;
+  font-weight: 300;
+}
+header#header nav #secondary li ul {
+  margin-top: -1px;
+}
+header#header nav #secondary li ul li.active, header#header nav #secondary li ul li:hover {
+  border-color: #00ff00;
+}
+header#header nav #secondary li ul li.active a, header#header nav #secondary li ul li:hover a {
+  color: #00ff00 !important;
+}
+header#header nav #secondary li ul li a {
+  font-size: 1.25em;
+  color: #aeaeae;
+}
+header#header nav #secondary input {
+  margin-top: 8px;
+  padding: 3px;
+  width: 144px;
+  font-size: 1.25em;
+  background: #00ff00;
+  border: none;
+  color: black;
+}
+header#header nav #secondary p#search-query {
+  margin-top: 25px;
+  font-size: 1.25em;
+  color: #00ff00;
+}
+header#header nav #secondary p#search-query strong {
+  display: block;
+  color: #00ff00;
 }
