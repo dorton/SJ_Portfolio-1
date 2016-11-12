@@ -36,32 +36,56 @@ a,a:focus,a:hover{
         width:700px}
 }
 
-html,body{
-    height:100%;
-    background-color:darkslategrey;
+
+/* body and body* set background color and font size*/
+body {
+  font-size: 150%;
+  line-height: 1.8em;
+  background: #000;
+}
+body * {
+  color: #fff;
 }
 
- div#container.container{
-     margin: 0 0 0 250px;
-     font-family: arial, sans-serif;
-     height: 85%;
-} 
-
- .nav#menu {
-     position: fixed;
-     text-align: right;
-     display: inline-block;
-     font-size: 1.25em;
- }
-
- .ul#primary.row {
-     position: fixed;
-     text-align: right;
-     display: inline-block;
-     font-size: 1.25em;
- }
-
-ul#secondary{
-    position: relative;
-    display: none;
+/* below gives nav menu white border above */
+header#header nav ul li {
+  border-top: 1px solid #aeaeae;
+  list-style-type: none;
+  display: block;
 }
+
+/* below hides navigation sub-menues */
+header#header nav #primary li ul {
+  display: none;
+}
+/* below gives lines above nav menu color during hover*/
+header#header nav #primary li:hover,
+header#header nav #primary li.active {
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
+/* below gives sub-menues display */
+header#header nav #primary li:hover ul,
+header#header nav #primary li.active ul {
+  display: block;
+}
+
+/* below gives menu color when hovering */
+header#header nav #primary li:hover > a,
+header#header nav #primary li.active > a {
+  color: #00ff00;
+}
+
+
+/* controls menu bar sizing and layout */
+.row > [class*="span"] {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+
+.span2 {
+  width: 150px;
+}
+
