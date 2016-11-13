@@ -1,0 +1,130 @@
+*, :before, :after{
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box
+}
+
+a,a:focus,a:hover{
+    color:#fff;
+}
+
+@media(min-width:768px){
+    .header{
+        float:right;
+    }
+    .mastfoot-inner{
+        float:right
+    }
+}
+
+@media(min-width:768px){
+    .header{
+        position:fixed;
+        top:0
+    }
+    .mastfoot-inner{
+        position:fixed;
+        bottom:0
+    }
+    .header,.mastfoot-inner,.container{
+        width:100%
+    }
+}
+
+@media(min-width:992px){
+    .header,.mastfoot-inner,.container{
+        width:700px}
+}
+
+
+/* body and body* set background color and font size*/
+body {
+  font-size: 150%;
+  line-height: 1.8em;
+  background: #000;
+  color: #fff;
+  margin: 30px;
+}
+
+ 
+/* below gives nav menu white border above */
+* header#header nav ul li {
+  border-top: 1px solid #aeaeae;
+  list-style-type: none;
+  display: block;
+}
+
+/* below hides navigation sub-menues */
+header#header nav #primary li ul {
+  display: none;
+}
+/* below gives lines above nav menu color during hover*/
+header#header nav #primary li:hover,
+header#header nav #primary li.active {
+  border-color: #00ff00;
+  color: #00ff00;
+}
+
+/* below gives sub-menues display */
+header#header nav #primary li:hover ul,
+header#header nav #primary li.active ul {
+  display: block;
+}
+
+/* below gives menu color when hovering */
+header#header nav #primary li:hover > a,
+header#header nav #primary li.active > a {
+  color: #00ff00;
+}
+
+/* controls menu bar sizing and layout */
+*.row > [class*="span"] {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+}
+
+.span2 {
+  width: 150px;
+}
+
+div.mastfoot {
+  position: absolute;
+  bottom: 0;
+  border-top: 1px solid white;
+  left: 10px;
+  color: #aeaeae;
+  width: 100%;
+}
+
+
+/*
+div.smooth#home {
+     background-image:url(https://scontent.fhou1-1.fna.fbcdn.net/v/t1.0-9/11221758_845794515474887_2095406007873945026_n.jpg?oh=739d0dbfff3387f81d82630503a6b8f6&oe=58682923);
+     -moz-background-size:cover;
+     -o-background-size:cover;
+     background-size:cover;
+     background-position:center center
+ }
+div.smooth#contact  {
+    background-image: url(https://scontent-ort2-1.xx.fbcdn.net/v/t1.0-9/13062018_983095058411498_2875076934618378839_n.jpg?oh=98ac4c797d34ff152f9ac6cb5afc982b&oe=5873E68B);
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+div.smooth#portfolio  {
+    background-image: url(https://lh3.googleusercontent.com/RSdFcMTPwXy-Ww3hn7ADglOb4qG6bm4pJ9d0rnw3Kti6z56tvxIb0mVLAi1DfMN7sXsO7WfPVC9SgzYkSDVQj0_E8zxhnoOBzEF49EEeeCE637r9j9royT0tUWr8iz1l-rJ0fpyU-nNozH44qLIr4Smi-Rjw2rWnSJPMz3o7rzvEg8wRFa3CDaYvqvREb00LBeN0JvPSqPcMA3OAp_Y9pJu-tb3T5UMUzMDHm6IRZT7INhapjAsLDS_NEE5symP0CqH-FBnr0taPebkW-tyefxya9bWYeBTr-CTPsf_5za3VSo6vdfuEtlhu_GC0y9_f-XmB6KMLPFAUKmApbDLctPpTBWQc96EtS9j1h4x9X7T2YEbZazVyhMnbHpGFqooDMLlSdBEqCV3F2w43h-K4kpk3IQISHWWY3n_UM4FFgdH4S1hgG-NxmY2U-lGyK7mnlvB6O3B3xT8WkrdpTb_gyu9kEIe62hrQl8DV3y-KnRA-S2R4NA_LuIUOppm4n6upzNhNkUBEnYk8Pe2P1cc6rvQE5msI082U_6LDbwxFCxSfwAu9_h-SF1nfAdZ-JBH8MiEBEQm7W6S0fWIgzZkeOX5eIhJXWM2YX4UjcjZebc5vFwRs=w920-h518-no);
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+div.smooth#about  {
+    background-image: url(https://lh3.googleusercontent.com/q-2RVRflg0r1irSBV4lIih0vQqd0HH6kn8woSRbGh0uFCtHUOpDRCxGZN5eFTyG95nfocXHIr7EyizqmdfHCJ6vMUEDCX0wOT8dt-DHkl2w2FHU7spD6aceerO1U0eN0O05y-qEKLZhyOItVNTN1dQNU_Oi2mt0SLdL400k0hLArZi2j7-G3_MWPMaZt1b-b045d-iaK9wbhecyBDvYYB-AmiUz2uZgQ6lEGVkc7ek5vXC5pe_9z05ONLtUhDSD4BfbRV0-Flz5mDmxL6St-FGZreOKd2RqByfM2C-fXPr0V6inwxh85sCntiwtfSlhWvcM6MY7lEjl9Gm9824MBqLDM_J4YTa6hmu4FtiFZE-ONd_jfLGjxvYFxFKMyaClEalQbgPsG6Kb9R2L0Zu_ty9quAMGk4t0-u92aFYtOvPPXiUN0WH9omKtw-rqBOMMq_ryWPntfPGY0IWRdl2xtw5ALrPQYQr1TwaZEDaHkNJr85suLebkwH5W0kq88rE6vH0tVZMa-clzAEobbZLXMh0p0oHVR55zXsYTpwJJ0nduGoYjEaeybp8oAstw1Js4tM4gYyFEGlw9NqQpxHslJM6RzCdb4PJm_YNrpaMDgKZZaQRvm=w1234-h694-no);
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+}
+*/

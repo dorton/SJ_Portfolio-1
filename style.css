@@ -41,45 +41,46 @@ a,a:focus,a:hover{
 body {
   font-size: 150%;
   line-height: 1.8em;
-  background: #000;
-}
-body * {
-  color: #fff;
+  background: #052527;
+  margin: 30px;
 }
 
-/* below gives nav menu white border above */
-header#header nav ul li {
-  border-top: 1px solid #aeaeae;
+/* below controls nav menu & border above it */
+* header#header nav ul li {
+  border-top: 1px solid #C98D00;
   list-style-type: none;
   display: block;
 }
+nav a {
+    color: #C98D00;
+}
 
-/* below hides navigation sub-menues */
+/* below controls navigation sub-menues */
 header#header nav #primary li ul {
   display: none;
 }
-/* below gives lines above nav menu color during hover*/
+/* below controls nav menu lines */
 header#header nav #primary li:hover,
 header#header nav #primary li.active {
-  border-color: #00ff00;
-  color: #00ff00;
+  border-color: #DCB65C;
+  color: #DCB65C;
 }
 
 /* below gives sub-menues display */
 header#header nav #primary li:hover ul,
 header#header nav #primary li.active ul {
   display: block;
+  padding: 0;
 }
 
 /* below gives menu color when hovering */
 header#header nav #primary li:hover > a,
 header#header nav #primary li.active > a {
-  color: #00ff00;
+  color: #DCB65C;
 }
 
-
 /* controls menu bar sizing and layout */
-.row > [class*="span"] {
+*.row > [class*="span"] {
   display: inline;
   float: left;
   margin-left: 10px;
@@ -89,3 +90,25 @@ header#header nav #primary li.active > a {
   width: 150px;
 }
 
+div.mastfoot {
+  position: absolute;
+  text-align: center;
+  bottom: 0;
+  border-top: 1px solid white;
+  border-color: #C98D00;
+  left: 10px;
+  color: #C98D00;
+  width: 100%; 
+}
+
+footer a {
+    color: #C98D00;
+}
+
+footer a:hover, a:active {
+    color: #DCB65C;
+}
+
+footer {
+    margin-top: 10px;
+}
