@@ -51,6 +51,10 @@ body {
   list-style-type: none;
   display: block;
 }
+
+header#header {
+    margin-left: 30px;
+}
 nav a {
     color: #C98D00;
 }
@@ -68,6 +72,7 @@ header#header nav #primary li:hover,
 header#header nav #primary li.active {
   border-color: #DCB65C;
   color: #DCB65C;
+
 }
 
 /* below gives sub-menues display */
@@ -98,7 +103,7 @@ div.middle {
     padding: 15px;
     position: absolute;
     right: 15px;
-    top: 60px;
+    padding-top: 130px;
 }
 
 .name {
@@ -106,9 +111,47 @@ div.middle {
     line-height: 0.7;
     text-align: right;
     color: #C98D00;
-    margin-top: 25rem;
+    margin-top: 15rem;
 }
 
+p {
+    color: #C98D00;
+    display: inline;
+    width: 300px;
+    text-align: left;
+    margin-left: 20px;
+    margin-right: 0px;
+}
+
+ul.specialties {
+    list-style-type: none;
+    color: #C98D00;
+    width: 300px;
+    margin-right: 0;
+    display: inline-block;
+    margin-top: 10rem;
+}
+
+ul.back-end {
+    list-style-type: none;
+    color: #C98D00;
+    display: inline-block;
+    margin-top: 10rem;
+}
+
+ul.front-end {
+    list-style-type: none;
+    color: #C98D00;
+    display: inline-block;
+    margin-top: 2rem;
+}
+
+div.dev {
+    float: left;
+    width: 200px;
+    display:inline-block;
+    
+}
 
 
 .position {
@@ -118,7 +161,10 @@ div.middle {
     text-align: right;
     color: #C98D00;
     margin-top: 20px;
-    margin-bottom: 25rem;
+    margin-bottom: 5rem;
+    margin-left: 0;
+    display: inline-block;
+    float: right;
 }
 
 div.mastfoot {
